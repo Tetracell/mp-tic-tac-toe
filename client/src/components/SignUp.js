@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function SignUp() {
   const [user, setUser] = useState(null);
-  const signUp = () => {}
+  const signUp = () => {};
   return (
     <div className="signUp">
       <label>Sign Up!</label>
@@ -30,7 +30,7 @@ function SignUp() {
           setUser({ ...user, password: event.target.value });
         }}
       />
-      <button onClick={signUp}/>
+      <button onClick={signUp}>Sign up</button>
     </div>
   );
 }

@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function Login() {
-    const [user, setUser] = useState(null);
-    const login = () => {}
-    return (
-      <div className="login">
-        <label>Login!</label>        
-        <input
-          placeholder="Username"
-          onChange={(event) => {
-            setUser({ ...user, userName: event.target.value });
-          }}
-        />
-        <input
-          placeholder="Password"
-          onChange={(event) => {
-            setUser({ ...user, password: event.target.value });
-          }}
-        />
-        <button onClick={login}/>
-      </div>
-    );
+  const [username, setUsername] = useState("");
+  const login = () => {};
+  return (
+    <div className="login">
+      <label>Login!</label>
+      <input
+        placeholder="Username"
+        onChange={(event) => {
+          setUsername({ ...username, userName: event.target.value });
+        }}
+      />
+      <input
+        placeholder="Password"
+        onChange={(event) => {
+          setUsername({ ...username, password: event.target.value });
+        }}
+      />
+      <button onClick={login}>Login</button>
+    </div>
+  );
 }
 
-export default Login
+export default Login;
